@@ -94,6 +94,39 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional2);
     printf("PIB per capita: %.2f reais\n", PIB_per_Capita2);
 
+    // comparações
+    printf("\nComparações\n");
     
+    if(populacao1 > populacao2) {
+        printf("A Populaçao 1 ganho\n");
+    } else {
+        printf("A populaçao 2 ganho\n");
+    }
+    if(area1 > area2) {
+        printf("A area 1 ganho\n");
+    } else {
+        printf("a area 2 ganho\n");
+    }
+    if(pib1 > pib2) {
+        printf("O pib 1 ganho\n");
+    }else {
+        printf("O pib 2 ganho\n");
+    }
+    if(numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2){
+        printf("O ponto turistico 1 ganho\n");
+    } else {
+        printf("O ponto turistico 2 ganho\n");
+    }
+    if(densidade_Populacional1 < densidade_populacional2){
+        printf("A densidade 1 ganho\n");
+    }else {
+        printf("A densidade 2 ganho\n");
+    }
+    if(PIB_per_Capita1 > PIB_per_Capita2){
+        printf("O pib per capito 1 ganho\n");
+    }else {
+        printf("O pib per capita 2 ganho\n");
+    }
+
     return 0;
 }
