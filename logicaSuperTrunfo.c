@@ -104,6 +104,7 @@ int main() {
     printf("4.comparar o numero de pontos turisticos\n");
     printf("5.comparar a densidade populacional\n");
     printf("6.comparar o pib per capita\n");
+    printf("\nescolha do jogaror:");
     scanf("%d", &escolha_do_jogador);
 
 
