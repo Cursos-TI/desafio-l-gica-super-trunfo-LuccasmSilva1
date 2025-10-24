@@ -134,8 +134,8 @@ int main() {
     printf("2.comparar a area\n");
     printf("3.comparar o pib\n");
     printf("4.comparar o numero de pontos turisticos\n");
-    printf("4.comparar a densidade populacional\n");
-    printf("5.comparar o pib per capita\n");
+    printf("5.comparar a densidade populacional\n");
+    printf("6.comparar o pib per capita\n");
     scanf("%d", &escolha_do_jogador);
 
 
@@ -160,6 +160,31 @@ int main() {
         }else{
             printf("O pib 2 ganho\n");
         }
+        break;
+        case 4:
+        if(numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2){
+            printf("O ponto turistico 1 ganho\n");
+        }else{
+            printf("O ponto turistico 2 ganho\n");
+        }
+        break;
+        case 5:
+        if(densidade_Populacional1 > densidade_populacional2){
+            printf("A densidade 1 ganho\n");
+        }else{
+            printf("A densidade 2 ganho\n");
+        }
+        break;
+        case 6:
+        if(PIB_per_Capita1 > PIB_per_Capita2){
+            printf("O pib per capito 1 ganho\n");
+        }else{
+            printf("O pib per capito 2 ganho\n")
+        }
+        break;
+        default:
+            printf("numero invalido");
+
     } 
     
     return 0;
