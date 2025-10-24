@@ -142,7 +142,7 @@ int main() {
         break;
 
     case 5:
-        if (densidade_Populacional1 > densidade_populacional2) {
+        if (densidade_Populacional1 < densidade_populacional2) {
             printf("A densidade populacional 1 ganhou\n");
         } else {
             printf("A densidade populacional 2 ganhou\n");
