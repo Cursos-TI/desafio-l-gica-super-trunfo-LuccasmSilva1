@@ -70,6 +70,7 @@ int main() {
     PIB_per_Capita2 = (pib2 * 1000000000)/populacao2;
     float densidade1 = 1/densidade_Populacional1;
     float densidade2 = 1/densidade_populacional2;
+    int escolha_do_jogador;
     
     
     //dados da carta 1
@@ -127,6 +128,39 @@ int main() {
     }else {
         printf("O pib per capita 2 ganho\n");
     }
+    // Menu do jogo
+    printf("\nmenu do jogo\n");
+    printf("1.comparar populaçâo\n");
+    printf("2.comparar a area\n");
+    printf("3.comparar o pib\n");
+    printf("4.comparar o numero de pontos turisticos\n");
+    printf("4.comparar a densidade populacional\n");
+    printf("5.comparar o pib per capita\n");
+    scanf("%d", &escolha_do_jogador);
 
+
+    switch (escolha_do_jogador){
+        case 1:
+        if (populacao1 > populacao2){
+            printf("A Populaçao 1 ganho\n");
+        }else{
+            printf("A Populaçao 2 ganho\n");
+        }
+        break;
+        case 2:
+        if (area1 > area2){
+            printf("A area 1 ganho\n");
+        }else{
+            printf("A area 2 ganho\n");
+        }
+        break;
+        case 3:
+        if (pib1 > pib2){
+            printf("O pib 1 ganho\n");
+        }else{
+            printf("O pib 2 ganho\n");
+        }
+    } 
+    
     return 0;
 }
