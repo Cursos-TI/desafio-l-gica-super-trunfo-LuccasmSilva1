@@ -95,39 +95,7 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional2);
     printf("PIB per capita: %.2f reais\n", PIB_per_Capita2);
 
-    // comparações
-    printf("\nComparações\n");
     
-    if(populacao1 > populacao2) {
-        printf("A Populaçao 1 ganho\n");
-    } else {
-        printf("A populaçao 2 ganho\n");
-    }
-    if(area1 > area2) {
-        printf("A area 1 ganho\n");
-    } else {
-        printf("a area 2 ganho\n");
-    }
-    if(pib1 > pib2) {
-        printf("O pib 1 ganho\n");
-    }else {
-        printf("O pib 2 ganho\n");
-    }
-    if(numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2){
-        printf("O ponto turistico 1 ganho\n");
-    } else {
-        printf("O ponto turistico 2 ganho\n");
-    }
-    if(densidade_Populacional1 < densidade_populacional2){
-        printf("A densidade 1 ganho\n");
-    }else {
-        printf("A densidade 2 ganho\n");
-    }
-    if(PIB_per_Capita1 > PIB_per_Capita2){
-        printf("O pib per capito 1 ganho\n");
-    }else {
-        printf("O pib per capita 2 ganho\n");
-    }
     // Menu do jogo
     printf("\nmenu do jogo\n");
     printf("1.comparar populaçâo\n");
@@ -139,53 +107,59 @@ int main() {
     scanf("%d", &escolha_do_jogador);
 
 
-    switch (escolha_do_jogador){
-        case 1:
-        if (populacao1 > populacao2){
-            printf("A Populaçao 1 ganho\n");
-        }else{
-            printf("A Populaçao 2 ganho\n");
+    switch (escolha_do_jogador) {
+    case 1:
+        if (populacao1 > populacao2) {
+            printf("A População 1 ganhou\n");
+        } else {
+            printf("A População 2 ganhou\n");
         }
         break;
-        case 2:
-        if (area1 > area2){
-            printf("A area 1 ganho\n");
-        }else{
-            printf("A area 2 ganho\n");
-        }
-        break;
-        case 3:
-        if (pib1 > pib2){
-            printf("O pib 1 ganho\n");
-        }else{
-            printf("O pib 2 ganho\n");
-        }
-        break;
-        case 4:
-        if(numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2){
-            printf("O ponto turistico 1 ganho\n");
-        }else{
-            printf("O ponto turistico 2 ganho\n");
-        }
-        break;
-        case 5:
-        if(densidade_Populacional1 > densidade_populacional2){
-            printf("A densidade 1 ganho\n");
-        }else{
-            printf("A densidade 2 ganho\n");
-        }
-        break;
-        case 6:
-        if(PIB_per_Capita1 > PIB_per_Capita2){
-            printf("O pib per capito 1 ganho\n");
-        }else{
-            printf("O pib per capito 2 ganho\n")
-        }
-        break;
-        default:
-            printf("numero invalido");
 
-    } 
+    case 2:
+        if (area1 > area2) {
+            printf("A Área 1 ganhou\n");
+        } else {
+            printf("A Área 2 ganhou\n");
+        }
+        break;
+
+    case 3:
+        if (pib1 > pib2) {
+            printf("O PIB 1 ganhou\n");
+        } else {
+            printf("O PIB 2 ganhou\n");
+        }
+        break;
+
+    case 4:
+        if (numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2) {
+            printf("A cidade 1 tem mais pontos turísticos\n");
+        } else {
+            printf("A cidade 2 tem mais pontos turísticos\n");
+        }
+        break;
+
+    case 5:
+        if (densidade_Populacional1 > densidade_populacional2) {
+            printf("A densidade populacional 1 ganhou\n");
+        } else {
+            printf("A densidade populacional 2 ganhou\n");
+        }
+        break;
+
+    case 6:
+        if (PIB_per_Capita1 > PIB_per_Capita2) {
+            printf("O PIB per capita 1 ganhou\n");
+        } else {
+            printf("O PIB per capita 2 ganhou\n");
+        }
+        break;
+
+    default:
+        printf("Número inválido\n");
+        break;
+}
     
     return 0;
 }
