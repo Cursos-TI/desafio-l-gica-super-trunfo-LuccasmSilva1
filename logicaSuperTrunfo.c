@@ -89,6 +89,8 @@ int main() {
 
     //dados da carta 2
     printf("\nCarta 2 :\n");
+    printf("Estado: %s\n", estado2);
+    printf("Codigo: %s\n", codigo_da_carta2);
     printf("População: %lu\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
