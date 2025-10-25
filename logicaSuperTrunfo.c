@@ -111,32 +111,32 @@ int main() {
 
     switch (escolha_do_jogador) {
     case 1:
-        populacao1 > populacao2 ? (maior = populacao1) : (maior = populacao2);
+        maior = (populacao1 > populacao2) ? 1 : 2;
         printf("A População: %d ganhou\n" , maior);
         break;
 
     case 2:
-        area1 > area2 ? (maior = area1) : (maior = area2);
+        maior = (area1 > area2) ? 1 : 2 ; 
         printf("A Área: %d ganhou\n", maior);
         break;
 
     case 3:
-        pib1 > pib2 ? (maior = pib1) : (maior = pib2);
+        maior = (pib1 > pib2) ? 1 : 2 ;
         printf("O PIB: %d ganhou\n", maior);
         break;
 
     case 4:
-        numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2 ? (maior = numero_de_pontos_turisticos1) : (maior = numero_de_pontos_turisticos2);
+        maior = (numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2) ? 1 : 2 ;
         printf("A cidade: %d tem mais pontos turísticos\n",maior);    
         break;
 
     case 5:
-        densidade1 < densidade2 ? (maior = densidade1) : (maior = densidade2);
+        maior = (densidade1 < densidade2) ? 1 : 2 ;
         printf("A densidade populacional: %d ganhou\n",maior);
         break;
 
     case 6:
-        pib1 > pib2 ? (maior = pib1) : (maior = pib2);
+        maior = (PIB_per_Capita1 > PIB_per_Capita2) ? 1 : 2 ;
         printf("O PIB per capita: %d ganhou\n", maior);
         break;
 
